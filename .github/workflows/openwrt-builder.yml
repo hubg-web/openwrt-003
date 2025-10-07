@@ -49,7 +49,8 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-
+   
+    # 清理系统空间，释放约 8–10 GB
     - name: Clone source code
       working-directory: /workdir
       run: |
